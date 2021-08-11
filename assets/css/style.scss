@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  &:hover {
+    text-decoration: none;
+  }
+}
+h2 {
+  padding: 10px;
+  text-align: center;
+}
+p {
+  font-size: 1.4rem;
+  color: #161c49;
+}
+a,
+i {
+  color: #0dbdcc;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+ul {
+  list-style: none;
+}
+#header {
+  background: #161c49;
+  .menu {
+    ul {
+      @include flex-center();
+      margin-bottom: 0px;
+      a {
+        padding: 20px;
+        display: inline-block;
+        color: #fff;
+        transition: all 0.3s ease;
+        &:hover {
+          color: aqua;
+        }
+      }
+    }
+  }
+}
+.blog {
+  background: aliceblue;
+  padding: 50px;
+
+  .container {
+    padding: 20px;
+    background: #fff;
+    height: calc(100vh - 120px);
+    border-radius: 16px;
+    box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.01);
+  }
+}
+#footer {
+  background: #161c49;
+  text-align: center;
+  .copyright {
+    padding: 30px 0px;
+    color: #fff;
+    font-size: 1.4rem;
+    @include flex-center();
+  }
+}
+
+// import about-me
+@import url(about-me.css);
