@@ -15,7 +15,7 @@ html {
 }
 a {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   &:hover {
     text-decoration: none;
   }
@@ -26,7 +26,7 @@ h2 {
   font-size: 1.4rem;
 }
 p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #161c49;
 }
 a,
@@ -185,10 +185,14 @@ body.no-scroll {
 }
 @media (max-width: 575px) {
   #footer .copyright {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .avatar {
     width: 100%;
+  }
+  p,
+  a {
+    font-size: 1rem;
   }
 }
 // import about-me

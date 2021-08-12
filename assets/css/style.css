@@ -14,7 +14,7 @@ html {
 
 a {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 a:hover {
@@ -28,7 +28,7 @@ h2 {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #161c49;
 }
 
@@ -236,10 +236,14 @@ body.no-scroll {
 
 @media (max-width: 575px) {
   #footer .copyright {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .avatar {
     width: 100%;
+  }
+  p,
+  a {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
