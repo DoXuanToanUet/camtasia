@@ -7,6 +7,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo1.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/fontAwesome/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/wowjs/animate.min.css" />
@@ -51,23 +56,85 @@
       <div class="container">
         <h2>Liên hệ</h2>
         <div class="contact">
-          <div class="contact-item">
-            <i class="fa fa-home"></i>
-            <p>Số điện thoại:</p>
+          <div
+            class="contact-item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0s"
+          >
+            <i class="fa fa-facebook-official"></i>
+            <p>
+              Facebook Group:
+              <a
+                href="https://www.facebook.com/groups/dxtfangroup "
+                target="_blank"
+              >
+                DXT FanGroup
+              </a>
+            </p>
           </div>
-          <div class="contact-item">
-            <i class="fa fa-home"></i>
-            <p>Fanpage:</p>
-            <a href="m.me/100601838995367"> Link mess</a>
+          <div
+            class="contact-item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.2s"
+          >
+            <i class="fa fa-facebook"></i>
+            <p>Facebook Fanpage:</p>
+            <a
+              href="https://www.facebook.com/Toandx-Supporter-100601838995367"
+              target="_blank"
+            >
+              Toandx Supporter</a
+            >
+          </div>
+          <div
+            class="contact-item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.4s"
+          >
+            <i class="fa fa-youtube-play"></i>
+            <p>Kênh Youtube:</p>
+            <a
+              href="https://www.youtube.com/channel/UCNWkuzs4gO_1FBwfjTYatxg?sub_confirmation=1"
+              target="_blank"
+            >
+              Toàn Supporter Video</a
+            >
           </div>
         </div>
       </div>
     </section>
-
+    <section class="donate"></section>
     <footer id="footer">
       <div class="copyright">@ 2021 - Người viết Đỗ Xuân Toàn - Dev</div>
     </footer>
-    <div class="container"></div>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "100601838995367");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v11.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
