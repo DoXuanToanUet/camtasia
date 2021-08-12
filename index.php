@@ -1,1 +1,0 @@
-<p>Xin chao moi nguoi</p>
